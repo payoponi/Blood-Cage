@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estylesheet.css">
+    <title>Blood Cage</title>
+</head>
+<body>
+    <header>
+        <a href="https://www.ufc.com" target="_blank">
+            <img src="data:image/png;base64,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"
+                 alt="UFC Logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#History">History</a></li>
+                <li><a href="#Top 10 main events">Top 10 main events</a></li>
+                <li><a href="#Top 10 best k.O">Top 10 best k.O</a></li>
+                <li><a href="#Top 10 best finishes">Top 10 best finishes</a></li>
+                <li><a href="#Top 10 fastest finishes">Top 10 fastest finishes</a></li>
+                <li><a href="#Top 10 best comebacks">Top 10 best comebacks</a></li>
+                <li><a href="#Top 20 best figthers ever">Top 20 best fighters ever</a></li>
+                <li><a href="#Best P4P">Best P4P</a></li>
+                <li><a href="#Shop">Shop</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="Presentation">
+        <div class="hero">
+            <img src="https://static.wixstatic.com/media/9707a9_76b275f6dd884f6ea9f7cb0c52c50b93~mv2.jpg/v1/fill/w_1000,h_667,al_c,q_85,usm_0.66_1.00_0.01/9707a9_76b275f6dd884f6ea9f7cb0c52c50b93~mv2.jpg" alt="cool ufc pic">
+            <h1>Blood Cage</h1>
+            <p>Feel the adrenaline of the world's most intense sport.</p>
+        </div>
+    </section>
+
+    <section id="History">
+        <h2> History of the UFC</h2>
+        <p>
+            The UFC started back in 1993 as a wild, no-rules fight competition to see which martial art was the best. It was raw, brutal, and a bit of a mess. People called it "human cockfighting," and it almost got shut down everywhere. They had no money, no fans, and most states banned it.
+            In 2001, Dana White and the Fertitta brothers bought the UFC for $2 million, which was basically nothing. They cleaned it up, made rules, and worked hard to get the sport legit. The big break came in 2005 with The Ultimate Fighter show. A crazy fight between Griffin and Bonnar, It blew up and put the UFC on the map.
+            After that, they kept growing, buying out their competition like Pride and Strikeforce, and signing some of the best fighters in the world. By 2016, the UFC was sold for $4 billion. Now, it’s one of the biggest sports companies, with stars like Chael Sonnen and Jon Jones pulling in millions of fans. From almost nothing to dominating the game.
+        </p>
+        <h2>History of the mma</h2>
+        <p>
+            MMA’s been around forever if you think about it. Back in ancient Greece, they had pankration, which was like MMA before it had a name. Later, in the 1900s, Brazil gave us "Vale Tudo" no rules fighting where the Gracies showed off Brazilian Jiu-Jitsu. In Japan, they had their own version with shoot wrestling.
+            Things got real in 1993 when the UFC showed up. It was a wild tournament to see which fighting style was king. Over time, fighters stopped sticking to one style and started mixing it up, striking, grappling, submissions, everything.
+            By the 2000s, MMA blew up. Pride was huge in Japan, and the UFC became a monster after getting organized. Now, MMA’s one of the biggest sports in the world, with fighters who can do it all. It’s come a long way from the old days of no rules and no money.
+        </p>
+    </section>
+    <section id="Top 10 main events">
+        <h2>Top 10 main events</h2>
+        <h3>UFC 100</h3>
+        <p>Lesnar vs Mir 2</p>
+        <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/inline/s3/2023-10/GettyImages-102524735.jpg?itok=XVvYRaZv" alt="Lesnar vs Mir 2">
+        <p> At UFC 100 in 2009, Brock Lesnar rematched Frank Mir after losing to him in their first fight. Lesnar dominated the fight, controlling Mir on the ground and finishing him with a TKO in the second round. It was a dominant performance that secured his spot as UFC Heavyweight Champion.</p>
+        <h3>UFC 129</h3>
+        <p>St-Pierre vs Shields</p>
+        <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/inline/s3/2023-10/GettyImages-113297521.jpg?itok=-lkMT8T6" alt="St-Pierre vs Shields">
+        <p>At UFC 129 in 2011, Georges St-Pierre easily defended his welterweight title against Jake Shields, dominating the fight with his striking and wrestling. St-Pierre won by unanimous decision, solidifying his legacy as one of the best in the sport.</p>
+        <h3>UFC nigth</h3>
+        <p>McGregor vs Brandao</p>
+        <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/inline/s3/2023-10/GettyImages-452439280.jpg?itok=YupMM8cM" alt="McGregor vs Brandao">
+        <p>At UFC Fight Night in 2014, Conor McGregor faced Diego Brandao in his first main event. McGregor put on a show, finishing Brandao in the first round with a TKO. It was a statement win that launched McGregor's rise to stardom in the UFC.</p>
+        <h3>UFC 189</h3>
+        <p>McGregor vs Mendes</p>
+        <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/inline/s3/2023-10/GettyImages-480460470.jpg?itok=GYmigVKN" alt="McGregor vs Mendes">
+        <p>At UFC 189 in 2015, Conor McGregor faced Chad Mendes for the interim featherweight title. McGregor overcame early adversity, knocking Mendes out in the second round to claim the belt. It was a thrilling fight that showcased McGregor's striking and heart.</p>
+        <h3>UFC 194</h3>
+        <p>McGregor vs Aldo</p>
+        <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/inline/s3/2023-10/GettyImages-501167538.jpg?itok=2IRnhMtQ" alt="McGregor vs Aldo">
+        <p>At UFC 194 in 2015, Conor McGregor faced Jose Aldo for the featherweight title. McGregor shocked the world, knocking Aldo out in just 13 seconds to become the undisputed champion. It was a historic moment that solidified McGregor as a superstar in the sport.</p>
+        <h3>UFC nigth</h3>
+        <p>Dos Anjos vs Cerrone 2</p>
+        <img src="https://upload.wikimedia.org/wikipedia/it/thumb/c/c5/Dos_Anjos_vs._Cerrone_2.png/800px-Dos_Anjos_vs._Cerrone_2.png" alt="Dos Anjos vs Cerrone 2">
+        <p>At UFC Fight Night in 2015, Rafael dos Anjos defended his lightweight title against Donald Cerrone in a rematch. Dos Anjos dominated the fight, finishing Cerrone in the first round with strikes. It was a dominant performance that showcased Dos Anjos' skills as a champion.</p>
+        <h3>UFC 205</h3>
+        <p>McGregor vs Alvarez</p>
+        <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/inline/s3/2023-10/GettyImages-624076130.jpg?itok=XpG3zBrv" alt="McGregor vs Alvarez">
+        <p>At UFC 205 in 2016, Conor McGregor faced Eddie Alvarez for the lightweight title. McGregor made history, becoming the first fighter to hold two belts in two different weight classes simultaneously. He finished Alvarez in the second round to claim the lightweight title.</p>
+        <h3>UFC 249</h3>
+        <p>Ferguson vs Gaethje</p>
+        <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/inline/s3/2023-10/GettyImages-1223920496.jpg?itok=w5IPFl3_" alt="Ferguson vs Gaethje">
+        <p>At UFC 249 in 2020, Tony Ferguson faced Justin Gaethje for the interim lightweight title. Gaethje put on a striking clinic, dominating Ferguson and finishing him in the fifth round to claim the belt. It was a thrilling fight that showcased Gaethje's skills as a top contender.</p>
+        <h3>UFC 261</h3>
+        <p>Usman vs Masvidal 2</p>
+        <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/inline/s3/2023-10/GettyImages-1314280587.jpg?itok=BFfb-E3f" alt="Usman vs Masvidal 2">    
+        <p>At UFC 261 in 2021, Kamaru Usman faced Jorge Masvidal for the welterweight title. Usman dominated the fight, knocking Masvidal out in the second round to retain his belt. It was a statement win that solidified Usman as one of the best welterweights in the sport.</p>
+        <h3>UFC 229</h3>
+        <p>Nurmagomedov vs McGregor</p>
+        <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/background_image_sm/s3/image/2019-01/GettyImages-1046918324.jpg?h=a0b679fb&itok=VMuPGJZL" alt="Nurmagomedov vs McGregor">
+        <p>At UFC 229 in 2018, Khabib Nurmagomedov faced Conor McGregor for the lightweight title. Nurmagomedov dominated the fight, submitting McGregor in the fourth round to retain his belt. The fight was marred by a post-fight brawl, but it showcased Nurmagomedov's skills as a dominant champion.</p> 
+    </section>
+
+    <section id="Top 10 best k.O">
+        <h2>Top 10 best k.O</h2>
+        <h3>Top 10: Jiří Procházka vs Dominick Reyes</h3>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/-lZjYaFu0bM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h3>Top 9: Israel Adesanya vs Alex Pereira 2</h3>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/bGFitClwaNs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h3>Top 8: Leon Edwards vs Kamaru Usman 2</h3>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/OyWeU6znIbE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h3>Top 7: Holly Holm vs Ronda Rousey</h3>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/IwVysi9P_Ok?mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h3>Top 6: Edson Barboza vs Terry Etim</h3>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/VqTD-FqmNXA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h3>Top 5: Cory Sandhagen vs Frankie Edgar</h3>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/01sW2UY_oO8?mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h3>Top 4: Joaquin Buckley vs Impa Kasanganay</h3>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/1QBP7gAZIOI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h3>Top 3: jorge masvidal vs ben askren</h3>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/0TjrEQo9wVs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h3>Top 2: Max Holloway vs Justin Gaethje</h3>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/dtnLZd9unlw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h3>Top 1: francis ngannou vs alistair overeem </h3>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/jM814CZSGQw?mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+
+    <section id="Top 10 best finishes">
+        <h2>Top 10 best finishes</h2>
+        <h3>Top 10: ronda rousey vs liz carmouche</h3>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/DlYPDyIxPsY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h3>Top 9: McGregor vs Nate Diaz</h3>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/eGVxUHlsyWw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h3>Top 8: Nate Diaz vs Takanori Gomi</h3>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/JKH2ZIiqGPM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h3>Top 7: mir vs nogueira 2</h3>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/3qX8WOgSFVc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h3>Top 6: emanialenko vs werdum</h3>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/QudKwfj9GUc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h3>Top 5: garcia vs jung 2</h3>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/eYZJ3EoSzj8?start=11" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h3>Top 4: jones vs machida</h3>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/wCjyS7zvPPs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h3>Top 3: johnson vs borg</h3>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/hMMEQQRhw5I?mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h3>Top 2: Mir vs Lesnar</h3>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/LZA5MK0oRgo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h3>Top 1: Anderson Silva vs Chael Sonnen</h3>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/sZz7A3TFbpo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+
+    <section id="Top 10 fastest finishes">
+        <h2>Top 10 fastest finishes</h2>
+        <h3>Top 10: Jair Rozenstruik vs Allen Crowder</h3>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/nAU34J763A4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h3>Top 9: Leon Edwards vs Seth Baczynski</h3>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/4Jb6pDueydY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h3>Top 8: Makwan Amirkhani vs Andy Ogle</h3>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/SptEby1tKj0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h3>Top 7: James Irvin vs Houston Alexander</h3>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/JlPdpU7gzlQ?mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h3>Top 6: Terrance McKinney vs Matt Frevola</h3>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/mQjkdVfVFOQ?mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h3>Top 5: Ryan Jimmo vs Anthony Perosh</h3>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/QoBkSOIatp8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h3>Top 4: Chan Sung Jung vs Mark Hominick</h3>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/Mwb0iUGvLe0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h3>Top 3: Todd Duffee vs Tim Hague</h3>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/xxfBtg7AgXI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h3>Top 2: Duane Ludwig vs Jonathan Goulet</h3>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/8DaDSbpKYow" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h3>Top 1: Jorge Masvidal vs Ben Askren</h3>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/cHCbWWKRSpg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+
+    <section id="Top 10 best comebacks">
+        <h2>Top 10 best comebacks</h2>
+        <h3>Top 10: bektić vs elkins</h3>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/AB61Zrts_wE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h3>Top 9: Usman vs Edwards 2</h3>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/L_wrz_fsF1c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h3>Top 8: Lewis vs Volkov</h3>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/NUWRveVLk94" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h3>Top 7: Mir vs Nogueira 2</h3>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/f6hTbHESk48" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h3>Top 6: Hughes vs Trigg 2</h3>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/BgPEt4Eztw4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h3>Top 5: Emelianenko vs Randleman</h3>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/SUR4cr5M_gc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h3>Top 4: Edgar vs Maynard 2</h3>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/c5Ie2kXTsRk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h3>Top 3: Lesnar vs Carwin</h3>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/3bl5_pUjZfw?mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h3>Top 2: Silva vs Sonnen</h3>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/sZz7A3TFbpo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h3>Top 1: Barry vs Kongo</h3>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/rMAwOwBB5OQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+
+    <section id="Top 20 best figthers ever">
+        <h2>Top 20 best figthers ever</h2>
+        <p>In this section, we will be looking at the best figthers of all time, and show their record as (wins-loses-draws, and in some No Contest)</p>
+        <h3>Top 20: Matt Hughes</h3>
+        <img src="https://images.tapology.com/letterbox_images/166/default/wide.jpg?1275993081" alt="Matt">
+        <h4>Record: 45-9-0</h4>
+        <p>Matt Hughes, a welterweight legend, dominated the octagon with his relentless wrestling and ground and pound. With multiple title defenses and victories over legends like St-Pierre and BJ Penn, his legacy as one of the UFC's greatest endures in the Hall of Fame.</p>
+        <h3>Top 19: Dominick "The Dominator" Cruz</h3>
+        <img src="https://images.tapology.com/letterbox_images/82/default/Dominick-Cruz-201-WEC-53.jpg?1292977622" alt="Dominik">
+        <h4>Record: 24-4-0</h4>
+        <p>Dominick Cruz, a bantamweight pioneer, revolutionized footwork and movement in MMA. With his unorthodox style and elite wrestling, he became a two-time champion and defended his belt.</p>
+        <h3>Top 18: "The Notorious" Conor McGregor</h3>
+        <img src="https://phantom-marca-us.unidadeditorial.es/268ad218948c6ea9fa000a54d00125a4/resize/828/f/jpg/assets/multimedia/imagenes/2024/05/26/17167342486416.jpg" alt="Conor">
+        <h4>Record: 22-6-0</h4>
+        <p>Conor McGregor, a two-division champion, took the MMA world by storm with his brash personality and knockout power. With victories over Aldo, Alvarez, and Poirier, he became one of the sport's biggest stars.</p>
+        <h3>Top 17: Alex "Poatan" Pereira</h3>
+        <img src="https://www.mma.es/wp-content/uploads/2024/09/alex-pereira-no-es-mi-culpa-magomed-ankalaev-tiene-un-870x400.jpg" alt="Alex">
+        <h4>Record: 12-2-0</h4>
+        <p>Alex Pereira, a middleweight powerhouse, made his mark in MMA with his striking and knockout power. With victories over Adesanya and Whittaker, he became one of the sport's most feared fighters.</p>
+        <h3>Top 16: Charles "do Bronx" Oliveira</h3>
+        <img src="https://empiresportsmedia.com/wp-content/uploads/2023/06/USATSI_20871511-scaled.jpg?w=858&h=483&crop=1" alt="Charles">
+        <h4>Record: 31-8-0 1Nc</h4>
+        <p>Charles Oliveira, a lightweight champion, showcased his elite grappling and submission skills in the octagon. With victories over Chandler and Ferguson, he became one of the sport's most dominant fighters.</p>
+        <h3>Top 15:  Ilia "El Matador" Topuria</h3>
+        <img src="https://static.euronews.com/articles/stories/08/24/85/76/808x539_cmsv2_9d4193bf-7655-5aef-986b-0f336e88bdcb-8248576.jpg" alt="Ilia">
+        <h4>Record: 16-0-0</h4>
+        <p>Ilia Topuria, a featherweight phenom, burst onto the MMA scene with his striking and grappling skills. With victories over Ryan Hall and Damon Jackson, he became one of the sport's most promising prospects.</p>
+        <h3>Top 14: "The Last Emperor" Fedor Emelianenko</h3>
+        <img src="https://m.media-amazon.com/images/I/815jOK3ypyL._AC_UF894,1000_QL80_.jpg" alt="Fedor">
+        <h4>Record: 40-7-0 1NC</h4>
+        <p>Fedor Emelianenko, a heavyweight legend, dominated the Pride era with his striking and sambo skills. With victories over Nogueira and Cro Cop, he became one of the sport's most feared fighters.</p>
+        <h3>Top 13: Israel "The Last Stylebender" Adesanya</h3>
+        <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/background_image_sm/s3/image/2023-04/040323-HERO-israel-adesanya-pre-fight.jpg?h=d1cb525d&itok=UlOE5GLe" alt="Israel">
+        <h4>Record: 24-4-0</h4>
+        <p>Israel 'The Last Stylebender' Adesanya, a striking genius and former UFC middleweight champion, redefined the sport with his creativity and precision. Known for his flashy techniques and victories over legends like Anderson Silva and Robert Whittaker, his legacy continues to grow.</p>
+        <h3>Top 12: Max "Blessed" Holloway</h3>
+        <img src="https://phantom-marca-us.unidadeditorial.es/1de6c5ac0dba0a14a3661d567bd0f878/resize/828/f/jpg/assets/multimedia/imagenes/2024/10/26/17299775073964.jpg" alt="Max">
+        <h4>Record: 26-8-0</h4>
+        <p>Max Holloway, a former UFC featherweight champion, showcased his striking and cardio in the octagon. With victories over Aldo and Ortega, he became one of the sport's most exciting fighters.</p>
+        <h3>Top 11: Kamaru "Nigerian Nightmare" Usman</h3>
+        <img src="https://dailytrust.com/wp-content/uploads/2021/11/Kamaru-Usman.png" alt="Kamaru">
+        <h4>Record: 20-4-0</h4>
+        <p>Kamaru Usman, a welterweight champion, dominated the division with his wrestling and striking. With victories over Masvidal and Covington, he became one of the sport's most dominant fighters.</p>
+        <h3>Top 10: Khabib "The Eagle" Nurmagomedov</h3>
+        <img src="https://ruik.es/wp-content/uploads/2023/06/Khabib-1024x683.jpg" alt="Khabib">
+        <h4>Record: 29-0-0</h4>
+        <p>Khabib Nurmagomedov, a lightweight legend, retired undefeated with his elite wrestling and grappling skills. With victories over McGregor and Gaethje, he became one of the sport's greatest champions.</p>
+        <h3>Top 9: Stipe Miocic</h3>
+        <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/background_image_sm/s3/2024-11/110624-hero-stipe-miocic_GettyImages-602257940.jpg?h=d1cb525d&itok=YSscYMol" alt="Stipe">
+        <h4>Record: 20-5-0</h4>
+        <p>Stipe Miocic, a heavyweight legend, showcased his striking and wrestling in the octagon. With victories over Ngannou and Cormier, he became one of the sport's most dominant champions.</p>
+        <h3>Top 8: Anderson "The Spider" Silva</h3>
+        <img src="https://i0.wp.com/bangtaomuaythai.com/wp-content/uploads/2024/11/anderson-silva-win-hero-belfort.jpg?fit=1000%2C666&ssl=1" alt="Anderson">
+        <h4>Record: 34-11-0 1NC</h4>
+        <p>Anderson Silva, a former UFC middleweight champion, revolutionized striking in MMA with his precision and creativity. With victories over Franklin and Belfort, he became one of the sport's greatest fighters.</p>
+        <h3>Top 7: Daniel "DC" Cormier</h3>
+        <img src="https://mmajunkie.usatoday.com/wp-content/uploads/sites/91/2018/11/daniel-cormier-ufc-230-getty1.jpg?w=1000&h=576&crop=1" alt="Daniel">
+        <h4>Record: 22-3-0 1NC</h4>
+        <p>Daniel Cormier, a two-division champion, showcased his wrestling and striking in the octagon. With victories over Miocic and Johnson, he became one of the sport's most respected fighters.</p>
+        <h3>Top 6: José Aldo "Junior"</h3>
+        <img src="https://imagenes.20minutos.es/files/image_990_556/uploads/imagenes/2023/06/23/jose-aldo.jpeg" alt="Jose">
+        <h4>Record: 32-9-0</h4>
+        <p>José Aldo, a former UFC featherweight champion, dominated the division with his striking and takedown defense. With victories over Mendes and Edgar, he became one of the sport's most dominant champions.</p>
+        <h3>Top 5: Islam Makhachev</h3>
+        <img src="https://ichef.bbci.co.uk/ace/standard/950/cpsprodpb/49e5/live/b9aebcf0-b2eb-11ef-a6fb-d9b09689a88d.jpg" alt="Islam">
+        <h4>Record: 21-1-0</h4>
+        <p>Islam Makhachev, a lightweight contender, showcased his grappling and striking skills in the octagon. With victories over Moises and Dober, he became one of the sport's most promising prospects.</p>
+        <h3>Top 4: Demetrious "Mighty Mouse" Johnson</h3>
+        <img src="https://m.media-amazon.com/images/M/MV5BNDhkMTg1ODctNzVkZi00YzM1LWI3ZDUtZTljMmEzN2VhZDA3XkEyXkFqcGc@._V1_.jpg" alt="Demetrious">
+        <h4>Record: 25-4-1</h4>
+        <p>Demetrious Johnson, a former UFC flyweight champion, showcased his speed and technique in the octagon. With victories over Cejudo and Dodson, he became one of the sport's most dominant champions.</p>
+        <h3>Top 3: Jon "Bones" Jones</h3>
+        <img src="https://images.ecestaticos.com/Ff-dr1F7W6RuBbD-AXXc1EQl3lo=/0x35:591x351/600x315/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2Feee%2F95f%2F182%2Feee95f1825ac15b07d9e77a3fbdd88b0.jpg" alt="Jon">
+        <h4>Record: 26-1-0 1NC</h4>
+        <p>Jon Jones, a former UFC light heavyweight champion, dominated the division with his striking and wrestling. With victories over Cormier and Gustafsson, he became one of the sport's most feared fighters.</p>
+        <h3>Top 2: Alexander "The Great" Volkanovski</h3>
+        <img src="https://www.thenews.com.pk/assets/uploads/updates/2024-02-18/1158899_9719712_5_updates.jpg" alt="Alexander">
+        <h4>Record: 26-4-0</h4>
+        <p>Alexander Volkanovski, a featherweight champion, showcased his striking and wrestling in the octagon. With victories over Holloway and Ortega, he became one of the sport's most dominant champions.</p>
+        <h3>Top 1: Georges "Rush" St-Pierre</h3>
+        <img src="https://i0.wp.com/mmauncensored.com/wp-content/uploads/2024/02/STJ-A09-26072019-Georges_St-Pierre.jpg?fit=847%2C568&amp;quality=75&amp;ssl=1" alt="Georges">
+        <h4>Record: 26-2-0</h4>
+        <p>Georges St-Pierre, a former UFC welterweight and middleweight champion, dominated the sport with his striking and wrestling. With victories over Hughes and Penn, he became one of the sport's greatest champions.</p>
+    </section>
+
+    <section id="Best P4P">
+        <h2>Best P4P</h2>
+        <h3 style="text-align: center;">Here we will see the best P4P in every weight division.</h3>
+    
+        <div class="p4p-container">
+            <a href="https://www.ufc.com/athlete/alexandre-pantoja" class="p4p-item">
+                <h4>Flyweight</h4>
+                <h5>Alexandre Pantoja</h5>
+                <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_profile_listing_medium_1x/s3/2024-12/PANTOJA_ALEXANDRE_BELT_12-07.png?itok=ZHXGVNAz" alt="Alexandre">
+            </a>
+    
+            <a href="https://www.ufc.com/athlete/merab-dvalishvili" class="p4p-item">
+                <h4>Bantamweight</h4>
+                <h5>Merab Dvalishvili</h5>
+                <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_profile_listing_medium_1x/s3/2024-10/2/DVALISHVILI_MERAB_BELT.png?itok=lwUVPRFE" alt="Merab">
+            </a>
+    
+            <a href="https://www.ufc.com/athlete/ilia-topuria" class="p4p-item">
+                <h4>Featherweight</h4>
+                <h5>Illia Topuria</h5>
+                <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_profile_listing_medium_1x/s3/2024-11/TOPURIA_ILIA_BELT.png?itok=kBTYhefr" alt="Illia">
+            </a>
+    
+            <a href="https://www.ufc.com/athlete/islam-makhachev" class="p4p-item">
+                <h4>Lightweight</h4>
+                <h5>Islam Makhachev</h5>
+                <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_profile_listing_medium_1x/s3/2024-10/2/MAKHACHEV_ISLAM_BELT_06-01.png?itok=5VE4uzDh" alt="Islam">
+            </a>
+    
+            <a href="https://www.ufc.com/athlete/belal-muhammad" class="p4p-item">
+                <h4>Welterweight</h4>
+                <h5>Belal Muhammad</h5>
+                <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_profile_listing_medium_1x/s3/2024-10/2/MUHAMMAD_BELAL_BELTMOCK.png?itok=Cj2qAGYE" alt="Belal">
+            </a>
+    
+            <a href="https://www.ufc.com/athlete/dricus-du-plessis" class="p4p-item">
+                <h4>Middleweight</h4>
+                <h5>Dricus Du Plessis</h5>
+                <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_profile_listing_medium_1x/s3/2024-10/2/DU_PLESSIS_DRICUS_BELT_08-17.png?itok=YJwK4y6p" alt="Dricus">
+            </a>
+    
+            <a href="https://www.ufc.com/athlete/jan-blachowicz" class="p4p-item">
+                <h4>Light Heavyweight</h4>
+                <h5>Alex Pereira</h5>
+                <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_profile_listing_medium_1x/s3/2024-10/3/PEREIRA_ALEX_BELT_10-05.png?itok=SWLcKjVe" alt="Alex">
+            </a>
+    
+            <a href="https://www.ufc.com/athlete/jon-jones" class="p4p-item">
+                <h4>Heavyweight</h4>
+                <h5>Jon Jones</h5>
+                <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_profile_listing_medium_1x/s3/2024-11/JONES_JON_BELT_11-16.png?itok=dPoJSc1k" alt="Jon Jones">
+            </a>
+        </div>
+    </section>
+
+    <section id="Shop">
+        <h2>Shop</h2>
+        <img src="https://d2pp598c7iga4q.cloudfront.net/files/ufc-store-discount-codes.png" alt="Shop">
+        <h3>Here you can buy the best MMA gear, the same one that UFC figthers use, as well as UFC merchandising</h3>
+        <a href="https://www.ufcstore.com/">UFC Store</a>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVHT1o6-dO2VLRfCGHAd52oJ-3Gf9zL34Wxg&s" alt="Shop">
+        <a href="https://www.Venum.com/">Venum Store</a>
+    </section>
+
+    <footer>
+    <p>© 2024 Blood Cage. All rigths reserved.</p>
+</footer>
+</body>
+</html>
